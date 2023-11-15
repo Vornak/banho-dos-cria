@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { FormsModule } from '@angular/forms';
 
+import { SQLite } from '@awesome-cordova-plugins/sqlite/ngx';
+
 
 
 @NgModule({
@@ -18,7 +20,9 @@ import { FormsModule } from '@angular/forms';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [
+    SQLite,
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
